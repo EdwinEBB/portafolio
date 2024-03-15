@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{scroll-behavior: smooth;}
+
+:root{
+    --colorheader:#0a081b;
+    --colorfondo:#0a081b  ;
+    --colorbody:#170c3f;
+    --fontcolor:#DBE2E5;
+    --fontcolor2:#8c048c;
+    --fontcolor3:#2c14cd;
+    --fontcolor4:#4B1DBB;
+    --fontcolor5:#8f0d90;
+    --colorcard:#240e3d;
+    --ebbcolor: #7411d4;
+    --ebbgrande:#8c048c;
+    --hoverfont:#057AC9;
+    --btncolor: #3b0c50;
+    --htmlcolor:#ED6100;
+    --csscolor:#03B3D6;
+    --reactcolor:#61DBFB;
+    --nodecolor:#3c873a;
+    --phpcolor:#AEB2D5;
+    --express:#68A063;
+    --jscolor:#f0db4f;
+    --mysqlcolor:#F29111;
+    --mongodbcolor:#4DB33D;
+    --githubcolor:#000000;
+    --barraprogesscolor:#929292;
+    --cardskillcolor:#300158;
+    --skills-bar-lenght:0%;
+    --titillium-semibold:titillium-semibold;
+    --titillium-bold:titillium-bold;
+    --titillium-black:titillium-black
+}
+
+@font-face {
+    font-family: titillium-semibold;
+    src: url("../font/Titillium-Semibold.otf");
+}
+@font-face {
+    font-family: titillium-bold;
+    src: url("../font/Titillium-Bold.otf");
+}
+@font-face {
+    font-family: titillium-black;
+    src: url("../font/Titillium-Black.otf");
+}
+
+body{
+    background-color: var(--colorbody);
+}
+
+
+header{
+    background-color: var(--colorheader);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.barra{
+    background-color: var(--colorfondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px 20px;
+    transition: all .5s ease;
+}
+
+.barra ul{
+    display: flex;
+    list-style: none;
+}
+
+.barra ul li a{
+    padding: 5px;
+    color: var(--fontcolor);
+    text-decoration: none;
+    transition: .2s;
+    font-family: var(--titillium-semibold);
+    font-size: 18px;
+}
+
+
+
+.cabecera-content{
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 30px;
+}
+
+.cabecera-textos{
+    max-width: 500px;
+    margin-left: 25px;
+    color: var(--fontcolor);
+    display: flex;
+    flex-direction: column;
+}
+
+.norobot{
+    font-size: 55px;
+    font-family: var(--titillium-bold);
+}
+
+.yoe{
+    display: block;
+    font-size: 55px;
+    font-family: var(--titillium-black);
+    color: var(--ebbgrande);
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 19ch;
+
+    animation: typing 2s steps(19),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blikn {
+    50% {border-color: transparent;}
+}
+
+
+
+
+.cabecera-btn{
+    margin-top: 100px;
+}
+
+.btn-cv{
+    cursor: pointer;
+    color: var(--fontcolor);
+    padding: 15px 65px;
+    border: 2px solid var(--fontcolor);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .2s;
+    font-family: var(--titillium-semibold);
+}
+/*Animaciones header*/
+
+nav ul li a:hover{
+    color: var(--hoverfont);
+}
+
+.vidio{
+    margin-left: 250px;
+    margin-top: -50px;
+}
+
+
+
+.btn-cv:hover{
+    background-color: var(--btncolor);
+    color: var(--ebbcolor);
+}
+
+
+/*sección sobre mi*/
+
+.cards{
+    margin-top: 60px;
+    display: flex;
+    height: 400px;
+    background-color: var(--colorcard);
+}
+
+.edwin-card{
+    height: 100%;
+}
+
+.text-card{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 470px;
+    margin-top: -270px;
+    height: 100%;
+}
+
+.pocosobremi{
+    font-family: var(--titillium-bold);
+    font-size: 50px;
+    color: var(--fontcolor5);
+}
+
+.fullstack{
+    font-family: var(--titillium-bold);
+    font-size: 20px;
+    color: var(--fontcolor3);
+}
+
+.decripcion{
+    font-family: var(--titillium-semibold);
+    color: var(--fontcolor);
+}
+
+.yo{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px #24247c;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+
+/*para proyectos*/
+.proyectos{
+    background-color: var(--colorcard);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.proyectos h1{
+    font-family: var(--titillium-bold);
+    text-align: center;
+    font-size: 55px;
+    color: var(--fontcolor5);
+    text-transform: uppercase;
+}
+
+.proyects-container{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyect-card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.proyect-card  .proyect-img{
+    width: 1100px;
+    height: 700px;
+    border-radius: 7px;
+}
+
+.proyect-card .titulo{
+    font-family: var(--titillium-semibold);
+    font-size: 40px;
+    color: var(--fontcolor4);
+    margin-bottom: 10px;
+}
+
+.proyect-card .descrip{
+    font-family: var(--titillium-semibold);
+    color: var(--fontcolor);
+    font-size: 25px;
+}
+
+.proyect-card .tec{
+    font-family: var(--titillium-semibold);
+    color: var(--fontcolor);
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.proyect-card .tecno{
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.proyect-card ul li{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 60px;
+    transition: .2s;
+}
+
+.proyect-card ul li:hover{
+    transform: translateY(-4px);
+}
+
+.proyect-card ul li i{
+    line-height: 100px;
+    font-size: 90px;
+}
+
+.proyect-card .enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.proyect-card .enlaces p{
+    font-family: var(--titillium-semibold);
+    font-size: 25px;
+    color: var(--fontcolor);
+}
+
+.proyect-card .enlaces i{
+    font-size: 60px;
+}
+.fa-html5{
+    color: var(--htmlcolor);
+}
+
+.fa-css3{
+    color: var(--csscolor);
+}
+
+.fa-square-js{
+    color: var(--jscolor);
+}
+
+.fa-node{
+    color: var(--nodecolor);
+}
+
+.fa-node-js{
+    color: var(--express);
+}
+
+.fa-react{
+    color: var(--reactcolor);
+}
+
+.fa-envira{
+    color: var(--mongodbcolor);
+}
+
+.fa-database{
+    color: var(--mysqlcolor);
+}
+
+.fa-github{
+    color: var(--githubcolor);
+}
+
+.fa-php{
+    color: var(--phpcolor);
+}
+
+/*fin proyectos*/
+
+/*inicio habilidades*/
+.skills{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--colorcard);
+}
+
+.skills .skill_title{
+    font-family: var(--titillium-bold);
+    font-size: 50px;
+    color: var(--fontcolor2);
+}
+
+.skills-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 280px;
+    align-items: center;
+    background-color: var(--cardskillcolor);
+}
+
+.skill-card .card-title{
+    font-family: var(--titillium-bold);
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--fontcolor);
+}
+
+.skills-content{
+    margin-bottom: 10px;
+}
+
+.skills-content i{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.skill_bar,
+.skill_bar::after{
+    position: relative;
+    width: 175px;
+    height: 15px;
+    background-color: var(--barraprogesscolor);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill_bar::after{
+    content: "";
+    left: -175px;
+    position: absolute;
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skill_bar_css::after{
+    background-color: var(--csscolor);
+
+}
+.skill_bar_js::after{
+    background-color: var(--jscolor);
+}
+.skill_bar_react::after{
+    background-color: var(--reactcolor);
+}
+.skill_bar_html::after{
+    background-color: var(--htmlcolor);
+}
+
+.skill_bar_node::after{
+    background-color: var(--nodecolor);
+}
+
+.skill_bar_mongodb::after{
+    background-color: var(--mongodbcolor);
+}
+
+.skill_bar_php::after{
+    background-color: var(--phpcolor);
+}
+
+.skill_bar_mysql::after{
+    background-color: var(--mysqlcolor);
+}
+
+
+.skill_bar--70::after{
+    --skills-bar-lenght:70%
+}
+
+.skill_bar--65::after{
+    --skills-bar-lenght:65%
+}
+
+.skill_bar--57::after{
+    --skills-bar-lenght:57%
+}
+
+.skill_bar--55::after{
+    --skills-bar-lenght:55%
+}
+
+.skill_bar--50::after{
+    --skills-bar-lenght:50%
+}
+
+
+@keyframes skills-bar-fill{
+    to{
+        transform: translateX(var(--skills-bar-lenght));
+    }
+}
+
+
+/*mobile*/
+.menu-mobile{
+    display: none;
+}
