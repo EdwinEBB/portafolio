@@ -514,7 +514,7 @@ nav ul li a:hover{
     display: none;
 }
 
-@media(max-width:800px){
+@media(max-width:768px){
     /*cabecera*/
     .barra .menu-header{
         display: none;
