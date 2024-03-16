@@ -55,6 +55,7 @@ html{scroll-behavior: smooth;}
 }
 
 body{
+    max-width: 100%;
     background-color: var(--colorbody);
     overflow-x: hidden;
 }
@@ -520,6 +521,7 @@ nav ul li a:hover{
     }
 
     body{
+        max-width: 100%;
         overflow-x: hidden;
     }
 
@@ -560,7 +562,7 @@ nav ul li a:hover{
     .vidio{
         width: 350px;
         height: 350px;
-        margin-left: 75px;
+        margin-left: 55px;
         margin-top: 20px;
     }
     
@@ -576,6 +578,11 @@ nav ul li a:hover{
     /*fin cabecera*/
     /*inicio sobre mi*/
 
+    .cards{
+        display: flex;
+        height: 95vh;
+    }
+
     .edwin-card{
         display: flex;
     }
@@ -588,14 +595,15 @@ nav ul li a:hover{
     }
 
     .text-card{
-        width: 300px;
+        width: 260px;
+        height: 300px;
         margin-top: 20px;
         margin-left: 20px;
         display: flex;
     }
 
     .pocosobremi{
-        font-size: 30px;
+        font-size: 1.5em;
     }
 
     .fullstack{
@@ -628,14 +636,15 @@ nav ul li a:hover{
     }
 
     .proyect-card .proyect-img{
-        width: 450px;
+        width: 430px;
         height: 260px;
-        margin-left: -20px;
+        margin-left: -15px;
     }
 
     .proyect-card .descrip{
         display: flex;
         font-size: 16px;
+        margin-left: -15px;
     }
 
     .proyect-card .tec{
