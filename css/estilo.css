@@ -594,7 +594,7 @@ nav ul li a:hover{
     }
 
     .text-card{
-        width: 260px;
+        max-width: 80%;
         height: 300px;
         margin-top: 20px;
         margin-left: 20px;
@@ -610,7 +610,7 @@ nav ul li a:hover{
     }
 
     .decripcion{
-        font-size: 14.7px;
+        font-size: .875em;
     }
 
     /*Fin sobre mi*/
