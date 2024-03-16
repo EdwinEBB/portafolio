@@ -75,7 +75,7 @@ header{
     transition: all .5s ease;
 }
 
-.barra ul{
+.barra .menu-header{
     display: flex;
     list-style: none;
 }
@@ -149,6 +149,11 @@ header{
     transition: .2s;
     font-family: var(--titillium-semibold);
 }
+
+.vidio{
+    width:400px;
+    height:400px;
+}
 /*Animaciones header*/
 
 nav ul li a:hover{
@@ -212,6 +217,8 @@ nav ul li a:hover{
     box-shadow: 0px 0px 5px 5px #24247c;
     margin-left: 10px;
     margin-top: 15px;
+    width:400px; 
+    height:300px;
 }
 
 
@@ -503,4 +510,236 @@ nav ul li a:hover{
 /*mobile*/
 .menu-mobile{
     display: none;
+}
+
+@media(max-width:800px){
+    /*cabecera*/
+    .barra .menu-header{
+        display: none;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .menu-mobile{
+        display: flex;
+        text-decoration: none;
+    }
+
+    .menu-mobile i{
+        font-size: 30px;
+    }
+
+    .barra{
+        display: flex;
+    }
+
+    header{
+        display: flex;
+    }
+    
+    .cabecera-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecera-textos{
+        display: flex;
+    }
+
+    .norobot{
+        font-size: 35px;
+    }
+
+    .yoe{
+        font-size: 35px;
+    }
+
+    .vidio{
+        width: 350px;
+        height: 350px;
+        margin-left: 75px;
+        margin-top: 20px;
+    }
+    
+    .btn-cv{
+        padding: 10px 50px;
+    }
+
+    .btn-cv:focus{
+        background-color: var(--btncolor);
+        color: var(--ebbcolor);
+    }
+
+    /*fin cabecera*/
+    /*inicio sobre mi*/
+
+    .edwin-card{
+        display: flex;
+    }
+
+    .yo{
+        width: 150px;
+        height: 150px;
+        margin-top: 120px;
+        margin-left: 10px;
+    }
+
+    .text-card{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .pocosobremi{
+        font-size: 30px;
+    }
+
+    .fullstack{
+        font-size: 20px;
+    }
+
+    .decripcion{
+        font-size: 14.7px;
+    }
+
+    /*Fin sobre mi*/
+
+    /*Inicio proyectos*/
+
+    .proyectos{
+        display: flex;
+    }
+
+    .proyectos h1{
+        font-size: 30px;
+    }
+
+    .proyects-container{
+        display: flex;
+        width: 100px;
+    }
+
+    .proyect-card .titulo{
+        font-size: 20px;
+    }
+
+    .proyect-card .proyect-img{
+        width: 450px;
+        height: 260px;
+        margin-left: -20px;
+    }
+
+    .proyect-card .descrip{
+        display: flex;
+        font-size: 16px;
+    }
+
+    .proyect-card .tec{
+        font-size: 20px;
+    }
+
+    .proyect-card .tecno{
+        display: flex;
+        margin-left: -100px;
+    }
+
+    .proyect-card ul li{
+        display: inline-block;
+    }
+
+    .proyect-card ul li i{
+        font-size: 50px;
+    }
+
+    .proyect-card .enlaces p{
+        margin-left: -40px;
+        font-size: 20px;
+    }
+
+    .proyect-card .enlaces a i{
+        font-size: 50px;
+        margin-left: -40px;
+    }
+
+    /*Fin proyectos*/
+    
+    /*Inicio habilidades*/
+    .skills{
+        display: flex;
+    }
+
+    .skills .skill_title{
+        font-size: 30px;
+    }
+
+    .skills-cards{
+        display: flex;
+    }
+
+    .skills-cards .card-title{
+        font-size: 25px;
+        margin-left: -25px;
+    }
+
+    .skills-content{
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .skill-card i{
+        font-size: 50px;
+    }
+
+    /*Fin habilidades*/
+
+    /*Inicio contacto*/
+    .contact h1{
+        font-size: 30px;
+    }
+
+    .contact-card{
+        display: flex;
+    }
+
+    .correo h5{
+        font-size: 15px;
+    }
+
+    .correo p{
+        font-size: 17px;
+        margin-left: 5px;
+        margin-top: -1px;
+    }
+
+    .correo{
+        margin-bottom: 10px;
+    }
+
+
+    .telefono h5{
+        font-size: 15px;
+    }
+
+    .telefono p{
+        font-size: 17px;
+        margin-left: 5px;
+        margin-top: -1px;
+    }
+
+    .contactos .redes-sociales{
+        display: flex;
+    }
+
+    .redes-sociales h4{
+        font-size: 22px;
+    }
+
+    .redes-sociales a i{
+        font-size: 40px;
+    }
+
+
 }
