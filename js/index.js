@@ -1,6 +1,7 @@
 const $navar= document.querySelector('.barra');
 const $favar= document.querySelectorAll('.fa-brands');
-const $ms=document.querySelector('.fa-database');
+const $solid=document.querySelectorAll('.fa-solid');
+
 /*par la barra*/
 window.addEventListener('scroll',function(){
     $navar.classList.toggle('activado',this.window.scrollY>0)
@@ -17,10 +18,21 @@ $favar.forEach(function(favar){
     })
 })
 
-$ms.addEventListener('mouseover',function(){
-    $ms.classList.add('fa-beat-fade')
+$solid.forEach(function(solid){
+    solid.addEventListener('mouseover',function(){
+        solid.classList.add('fa-beat-fade')
+    })
+
+    solid.addEventListener('mouseout',function(){
+        solid.classList.remove('fa-beat-fade')
+    })
 })
 
-$ms.addEventListener('mouseout',function(){
-    $ms.classList.remove('fa-beat-fade')
-})
+/*para copiar al portapapeles*/
+
+function copiartext(text=""){
+    const textt=document.querySelector(`.${text}`);
+    textt.select();
+    document.execCommand('copy');
+    alert("texto copiado")
+}

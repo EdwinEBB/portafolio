@@ -29,8 +29,10 @@ html{scroll-behavior: smooth;}
     --express:#68A063;
     --jscolor:#f0db4f;
     --mysqlcolor:#F29111;
+    --pythoncolor:#4B8BBE;
     --mongodbcolor:#4DB33D;
     --githubcolor:#000000;
+    --linkedincolor:#0077B5;
     --barraprogesscolor:#929292;
     --cardskillcolor:#300158;
     --skills-bar-lenght:0%;
@@ -320,7 +322,7 @@ nav ul li a:hover{
     color: var(--htmlcolor);
 }
 
-.fa-css3{
+.fa-css3-alt{
     color: var(--csscolor);
 }
 
@@ -356,6 +358,14 @@ nav ul li a:hover{
     color: var(--phpcolor);
 }
 
+.fa-python{
+    color: var(--pythoncolor);
+}
+
+.fa-linkedin-in{
+    color: var(--linkedincolor);
+}
+
 /*fin proyectos*/
 
 /*inicio habilidades*/
@@ -376,7 +386,7 @@ nav ul li a:hover{
 
 .skills-cards{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .skill-card{
@@ -386,103 +396,109 @@ nav ul li a:hover{
     margin-top: 25px;
     margin-left: 35px;
     margin-bottom: 30px;
-    width: 300px;
-    height: 280px;
+    width: 800px;
     align-items: center;
-    background-color: var(--cardskillcolor);
 }
 
 .skill-card .card-title{
     font-family: var(--titillium-bold);
-    font-size: 20px;
+    font-size: 45px;
     margin-bottom: 15px;
     color: var(--fontcolor);
 }
 
 .skills-content{
     margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .skills-content i{
-    font-size: 25px;
+    font-size: 70px;
     margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.skill_bar,
-.skill_bar::after{
-    position: relative;
-    width: 175px;
-    height: 15px;
-    background-color: var(--barraprogesscolor);
-    border-radius: 10px;
-    overflow: hidden;
+/*fin habilidades*/
+
+/*inicio contacto*/
+.contact{
+    margin-top: 60px;
+    background-color: var(--colorcard);
+    height: 300px;
 }
 
-.skill_bar::after{
-    content: "";
-    left: -175px;
-    position: absolute;
-    animation: skills-bar-fill 2s ease-in-out forwards;
+.contact h1{
+    font-size: 50px;
+    font-family: var(--titillium-bold);
+    color: var(--fontcolor2);
+    text-align: center;
 }
 
-.skill_bar_css::after{
-    background-color: var(--csscolor);
-
-}
-.skill_bar_js::after{
-    background-color: var(--jscolor);
-}
-.skill_bar_react::after{
-    background-color: var(--reactcolor);
-}
-.skill_bar_html::after{
-    background-color: var(--htmlcolor);
+.contact .contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.skill_bar_node::after{
-    background-color: var(--nodecolor);
+.contact-card .contactos{
+    display: flex;
+    flex-direction: column;
 }
 
-.skill_bar_mongodb::after{
-    background-color: var(--mongodbcolor);
+.contactos .correo{
+    display: flex;
 }
 
-.skill_bar_php::after{
-    background-color: var(--phpcolor);
+.correo h5{
+    font-family: var(--titillium-bold);
+    font-size: 20px;
+    color: var(--fontcolor);
 }
 
-.skill_bar_mysql::after{
-    background-color: var(--mysqlcolor);
+.correo p{
+    font-family: var(--titillium-semibold);
+    font-size: 22px;
+    color: var(--fontcolor);
+    margin-left: 10px;
 }
 
-
-.skill_bar--70::after{
-    --skills-bar-lenght:70%
+.contactos .telefono{
+    display: flex;
 }
 
-.skill_bar--65::after{
-    --skills-bar-lenght:65%
+.telefono h5{
+    font-family: var(--titillium-bold);
+    font-size: 20px;
+    color: var(--fontcolor);
 }
 
-.skill_bar--57::after{
-    --skills-bar-lenght:57%
+.telefono p{
+    font-family: var(--titillium-semibold);
+    font-size: 22px;
+    color: var(--fontcolor);
+    margin-left: 10px;
 }
 
-.skill_bar--55::after{
-    --skills-bar-lenght:55%
+.contactos .redes-sociales{
+    display: flex;
 }
 
-.skill_bar--50::after{
-    --skills-bar-lenght:50%
+.redes-sociales h4{
+    font-family: var(--titillium-bold);
+    color: var(--fontcolor);
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
-
-@keyframes skills-bar-fill{
-    to{
-        transform: translateX(var(--skills-bar-lenght));
-    }
+.redes-sociales a{
+    margin-left: 20px;
 }
 
+.redes-sociales a i{
+    font-size: 50px;
+}
 
 /*mobile*/
 .menu-mobile{
