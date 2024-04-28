@@ -8,24 +8,23 @@
 html{scroll-behavior: smooth;}
 
 :root{
-    --colorheader:#0a081b;
-    --colorfondo:#0a081b  ;
-    --colorbody:#170c3f;
+    --colorheader:#b1b1b1;
+    --colorfondo:black;
+    --colorbody:#9a9a9b;
     --fontcolor:#DBE2E5;
-    --fontcolor2:#8c048c;
-    --fontcolor3:#2c14cd;
-    --fontcolor4:#4B1DBB;
-    --fontcolor5:#8f0d90;
-    --colorcard:#240e3d;
+    --fontcolor2:#1f1e1f;
+    --fontcolor4:#0e2429;
+    --fontcolor5:#003C49;
+    --colorcard:#b3b2b2;
     --ebbcolor: #7411d4;
-    --ebbgrande:#8c048c;
-    --hoverfont:#057AC9;
-    --btncolor: #3b0c50;
+    --ebbgrande:#003C49;
+    --hoverfont:#387d8d;
+    --btncolor: #003C49;
     --htmlcolor:#ED6100;
     --csscolor:#03B3D6;
-    --reactcolor:#61DBFB;
+    --reactcolor:#4eb1ca;
     --nodecolor:#3c873a;
-    --phpcolor:#AEB2D5;
+    --phpcolor:#484C89;
     --express:#68A063;
     --jscolor:#f0db4f;
     --mysqlcolor:#F29111;
@@ -109,6 +108,7 @@ header{
 
 .norobot{
     font-size: 55px;
+    color: var(--fontcolor2);
     font-family: var(--titillium-bold);
 }
 
@@ -143,9 +143,9 @@ header{
 
 .btn-cv{
     cursor: pointer;
-    color: var(--fontcolor);
+    color: var(--btncolor);
     padding: 15px 65px;
-    border: 2px solid var(--fontcolor);
+    border: 2px solid var(--btncolor);
     border-radius: 10px;
     text-decoration: none;
     transition: .2s;
@@ -164,14 +164,14 @@ nav ul li a:hover{
 
 .vidio{
     margin-left: 250px;
-    margin-top: -50px;
+    margin-top: -10px;
 }
 
 
 
 .btn-cv:hover{
     background-color: var(--btncolor);
-    color: var(--ebbcolor);
+    color: var(--fontcolor);
 }
 
 
@@ -206,17 +206,17 @@ nav ul li a:hover{
 .fullstack{
     font-family: var(--titillium-bold);
     font-size: 20px;
-    color: var(--fontcolor3);
+    color: var(--fontcolor5);
 }
 
 .decripcion{
     font-family: var(--titillium-semibold);
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
 }
 
 .yo{
     border-radius: 50%;
-    box-shadow: 0px 0px 5px 5px #24247c;
+    box-shadow: 0px 0px 5px 5px var(--ebbgrande);
     margin-left: 10px;
     margin-top: 15px;
     width:400px; 
@@ -273,13 +273,13 @@ nav ul li a:hover{
 
 .proyect-card .descrip{
     font-family: var(--titillium-semibold);
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
     font-size: 25px;
 }
 
 .proyect-card .tec{
     font-family: var(--titillium-semibold);
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
     font-size: 23px;
     margin-bottom: 25px;
 }
@@ -321,7 +321,7 @@ nav ul li a:hover{
 .proyect-card .enlaces p{
     font-family: var(--titillium-semibold);
     font-size: 25px;
-    color: var(--fontcolor);
+    color: var(--fontcolor5);
 }
 
 .proyect-card .enlaces i{
@@ -390,7 +390,7 @@ nav ul li a:hover{
 .skills .skill_title{
     font-family: var(--titillium-bold);
     font-size: 50px;
-    color: var(--fontcolor2);
+    color: var(--fontcolor5);
 }
 
 .skills-cards{
@@ -413,7 +413,7 @@ nav ul li a:hover{
     font-family: var(--titillium-bold);
     font-size: 45px;
     margin-bottom: 15px;
-    color: var(--fontcolor);
+    color: var(--fontcolor4);
 }
 
 .skills-content{
@@ -440,7 +440,7 @@ nav ul li a:hover{
 .contact h1{
     font-size: 50px;
     font-family: var(--titillium-bold);
-    color: var(--fontcolor2);
+    color: var(--fontcolor5);
     text-align: center;
 }
 
@@ -463,13 +463,13 @@ nav ul li a:hover{
 .correo h5{
     font-family: var(--titillium-bold);
     font-size: 20px;
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
 }
 
 .correo p{
     font-family: var(--titillium-semibold);
     font-size: 22px;
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
     margin-left: 10px;
 }
 
@@ -480,13 +480,13 @@ nav ul li a:hover{
 .telefono h5{
     font-family: var(--titillium-bold);
     font-size: 20px;
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
 }
 
 .telefono p{
     font-family: var(--titillium-semibold);
     font-size: 22px;
-    color: var(--fontcolor);
+    color: var(--fontcolor2);
     margin-left: 10px;
 }
 
@@ -496,7 +496,7 @@ nav ul li a:hover{
 
 .redes-sociales h4{
     font-family: var(--titillium-bold);
-    color: var(--fontcolor);
+    color: var(--fontcolor5);
     font-size: 25px;
     margin-bottom: 20px;
 }
